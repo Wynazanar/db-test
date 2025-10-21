@@ -1,0 +1,85 @@
+* {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.center {
+    justify-items: center;
+}
+
+section {
+    background: linear-gradient(#00000003 10%, #ffc38a66);
+    padding: 20px;
+    border-radius: 10px;
+    margin-block: 40px;
+}
+
+.up_d {
+    background: linear-gradient(#c4c4c466 10%, #00000003);
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec-inf {
+    justify-content: center;
+    justify-items: center;
+}
+
+input, select {
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    margin-block: 4px;
+}
+
+button {
+    text-align: center;
+    background-color: rgba(255, 195, 138, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    font-weight: 600;
+    color: #000000d0;
+    width: 100%;
+    margin-block: 5px;
+
+    transition: all 0.15s ease-in-out;
+}
+
+button:hover {
+    transform: scale(0.99);
+    background-color: #ff9028e1;
+}
+
+select {
+    width: 100%;
+}
+
+#alert {
+    font-weight: 500;
+    transition: all 0.25s ease-in-out;
+}
+
+.true {
+    color: green;
+}
+
+.false {
+    color: red;
+}

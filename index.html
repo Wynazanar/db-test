@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB link</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="section">
+                <div class="sec-inf">
+                    <h2>Пользователи</h2>
+                    <input type="text" value="" id="login" placeholder="Логин"><br>
+                    <input type="text" value="" id="password" placeholder="Пароль"><br>
+                    <button id="userAdd">Добавить пользователя</button>
+                </div>
+                <div class="sec-inf">
+                    <h2>Организации</h2>
+                    <input id="title" type="text" placeholder="Наименование"><br>
+                    <input id="src" type="text" placeholder="Ссылка на сайт"><br>
+                    <button id="orgAdd">Добавить организацию</button>
+                </div>
+                <div class="sec-inf">
+                    <h2>Разрешения</h2>
+                    <select name="user_select" id="user_select">
+                    </select>
+                    <select name="org_select" id="org_select">
+                    </select><br>
+                    <button id="acsAdd">Добавить полномочия</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="up_d">
+        <div class="container center">
+            <div class="section_inf" style="text-align: center;">
+                <h2>Авторизация</h2>
+                <input type="text" value="" id="login_auth" placeholder="Логин"><br>
+                <input type="text" value="" id="password_auth" placeholder="Пароль"><br>
+                <input type="text" value="" id="src_auth" placeholder="Ссылка"><br>
+                <button onclick="CheckLink()">Перейти на ресурс</button>
+                <p id="alert"></p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="container">
+        <p>Пример соединения 2-х БД в одну. На выбор уже есть несколько записей в "Пользователи" и "Организация".</p>
+        <p>В Разрешениях можно выбирать пользователя и доступ к ресурсу. Если у пользователя уже есть доступ, то появится оповещение.</p>
+        <p>Авторизация - способ проверки данных. Если данные пользователя и запрашиваемого ресурса совпадают, то доступ разрешен. Иначе - нет.</p>
+        <p style="color: rgba(0, 0, 0, 0.25);">P.S. для удобства чтения данных, в консоль выводятся списки данных о пользователях, организациях и их разрешениях</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
